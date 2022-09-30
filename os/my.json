@@ -1,0 +1,15 @@
+{
+    "chrome":"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+    "folder_path":
+    {
+        "physio":"D:/My_laravel/physio-backend",
+        "prime_coach":"D:/prime coach/prime-coach-backend"
+    },
+    "url":
+    {
+        "physio":"http://127.0.0.1:8000/admin/login",
+        "prime_coach":"http://127.0.0.1:8000",
+        "youtube":"https://www.youtube.com"
+    }
+
+}

@@ -1,0 +1,2 @@
+welcome mr. {name}
+your age is {age}
