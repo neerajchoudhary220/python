@@ -5,7 +5,7 @@ import clipboard
 from pynput.keyboard import Key, Controller
 
 
-time.sleep(3)
+
 # key_f = open('english_keys.txt','r',encoding="utf8")
 values_f = open('english_values.txt',encoding="utf8")
 
@@ -13,14 +13,15 @@ values_f = open('english_values.txt',encoding="utf8")
 values = values_f.readlines()
 
 tf = open('tranlated.txt','a',encoding="utf8")
+chrome_path = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"+" %s"
+url = 'https://translate.google.com/?hl=en&sl=en&tl=ar&op=translate'
+webbrowser.get(chrome_path).open(url)
+pyautogui.click(525, 638)
 
 Keyboard = Controller()
 def translation(keyline,word):
-    chrome_path = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"+" %s"
-    url = 'https://translate.google.com/?hl=en&sl=en&tl=ar&text=world&op=translate'
-    webbrowser.get(chrome_path).open(url)
+   
     time.sleep(2)
-    # pyautogui.click(525, 637)
     Keyboard.type(word)
 
     time.sleep(4)
