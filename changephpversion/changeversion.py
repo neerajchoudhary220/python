@@ -1,0 +1,60 @@
+import os,time
+from pynput.keyboard import Key, Controller
+Keyboard = Controller()
+class phpversion:
+    def set_version_8_1_6():
+        os.startfile('cmd')
+        time.sleep(2)
+        Keyboard.type('rundll32.exe sysdm.cpl,EditEnvironmentVariables')
+        Keyboard.press(Key.enter)
+        Keyboard.release(Key.enter)
+        time.sleep(2)
+        Keyboard.press('p')
+        Keyboard.release('p')
+        time.sleep(2)
+        with Keyboard.pressed(Key.alt):
+            Keyboard.press('e')
+            Keyboard.release('e')
+        time.sleep(2)
+        with Keyboard.pressed(Key.alt):
+            Keyboard.press('e')
+            Keyboard.release('e')
+        Keyboard.type(r'C:\xampp\php')
+        time.sleep(2)
+        Keyboard.press(Key.enter)
+        Keyboard.release(Key.enter)
+        Keyboard.press(Key.enter)
+        Keyboard.release(Key.enter)
+        Keyboard.press(Key.enter)
+        Keyboard.release(Key.enter)
+        time.sleep(2)
+        print('Now you system php version is 8.1.6 You can check by "php -v" command also')
+    
+    def set_version_7_4_0():
+        os.startfile('cmd')
+        time.sleep(2)
+        Keyboard.type('rundll32.exe sysdm.cpl,EditEnvironmentVariables')
+        Keyboard.press(Key.enter)
+        Keyboard.release(Key.enter)
+        time.sleep(2)
+        Keyboard.press('p')
+        Keyboard.release('p')
+        time.sleep(2)
+        with Keyboard.pressed(Key.alt):
+            Keyboard.press('e')
+            Keyboard.release('e')
+        time.sleep(2)
+        with Keyboard.pressed(Key.alt):
+            Keyboard.press('e')
+            Keyboard.release('e')
+        Keyboard.type(r'C:\wamp64\bin\php\php7.4.0')
+        time.sleep(2)
+        Keyboard.press(Key.enter)
+        Keyboard.release(Key.enter)
+        Keyboard.press(Key.enter)
+        Keyboard.release(Key.enter)
+        Keyboard.press(Key.enter)
+        Keyboard.release(Key.enter)
+        time.sleep(2)
+        print('Now you system php version is 7.4.0 You can check by "php -v" command also')
+    
